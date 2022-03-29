@@ -9,6 +9,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
   Future<List<Suggestions>> searchDrugs(String query) async {
     List<Suggestions> suggestions = [
       Suggestions(
+          pId: 1,
           id: 'PRO23648856',
           drugName: 'Paracetamol',
           imagePath: 'assets/images/drugs/paracetamol.png',
@@ -18,6 +19,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
               '1 pack of Emzor Paracetamol (500mg) contains 8 units of 12 tablets.',
           drugPrice: 'N350.00'),
       Suggestions(
+          pId: 2,
           id: 'PRO23648856',
           drugName: 'Doliprane',
           imagePath: 'assets/images/drugs/doliprane.png',
@@ -27,6 +29,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
           drugMeasurement: '10000mg',
           drugPrice: 'N350.00'),
       Suggestions(
+          pId: 3,
           id: 'PRO23648856',
           drugName: 'Paracetamol',
           imagePath: 'assets/images/drugs/paracetamol_two.png',
@@ -36,6 +39,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
           drugMeasurement: '500mg',
           drugPrice: 'N350.00'),
       Suggestions(
+          pId: 4,
           id: 'PRO23648856',
           drugName: 'Ibuprofen',
           imagePath: 'assets/images/drugs/ibuprofen.png',
@@ -45,6 +49,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
           drugMeasurement: '200mg',
           drugPrice: 'N350.00'),
       Suggestions(
+          pId: 5,
           drugName: 'Panadol',
           id: 'PRO23648856',
           imagePath: 'assets/images/drugs/panadol.png',
@@ -54,6 +59,7 @@ class SearchDrugsRepositoryImpl extends SearchDrugsRepository {
           drugMeasurement: '500mg',
           drugPrice: 'N350.00'),
       Suggestions(
+          pId: 6,
           id: 'PRO23648856',
           drugName: 'Ibuprofen',
           imagePath: 'assets/images/drugs/ibuprofen_two.png',

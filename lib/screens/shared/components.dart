@@ -1,6 +1,6 @@
 import 'package:dro_health_phamarcy/data/models/pharm_categories.dart';
 import 'package:dro_health_phamarcy/data/models/suggestions.dart';
-import 'package:dro_health_phamarcy/screens/pharmacy/product_detail.dart';
+import 'package:dro_health_phamarcy/screens/products/product_details/product_detail.dart';
 import 'package:dro_health_phamarcy/utils/colors.dart';
 import 'package:dro_health_phamarcy/utils/navigation.dart';
 import 'package:dro_health_phamarcy/utils/size_config.dart';

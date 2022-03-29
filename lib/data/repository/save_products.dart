@@ -9,14 +9,26 @@ class SaveProducts {
     return _instance;
   }
 
-  List<Suggestions>? _cartProducts = [];
+  final List<Suggestions>? _cartProducts = [];
 
   int get length => _cartProducts!.length;
 
   List<Suggestions>? get cartProducts => _cartProducts;
 
+  ///add a product to cart
   void addProductToCart({Suggestions? suggestions}) {
-    cartProducts!.add(suggestions!);
+    _cartProducts!.add(suggestions!);
     print(cartProducts.toString());
+  }
+
+  ///retrieve a product from cart
+  retrieveProductsInCart({Suggestions? suggestions}) {
+    print(cartProducts!.first.description);
+    return _cartProducts;
+  }
+
+  ///remove products from cart
+  removeProductsFromCart({List<Suggestions>? product}) {
+    _cartProducts!.remove(product);
   }
 }

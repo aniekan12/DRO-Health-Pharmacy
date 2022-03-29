@@ -3,11 +3,11 @@
 import 'dart:ui';
 
 import 'package:badges/badges.dart';
-import 'package:dro_health_phamarcy/business_logic/searchbloc/search_bloc.dart';
+import 'package:dro_health_phamarcy/data/bloc/searchbloc/search_bloc.dart';
 import 'package:dro_health_phamarcy/data/models/pharm_categories.dart';
 import 'package:dro_health_phamarcy/data/models/suggestions.dart';
-import 'package:dro_health_phamarcy/screens/pharmacy/categories/view_all_categories.dart';
-import 'package:dro_health_phamarcy/screens/pharmacy/product_detail.dart';
+import 'package:dro_health_phamarcy/screens/products/categories/view_all_categories.dart';
+import 'package:dro_health_phamarcy/screens/products/product_details/product_detail.dart';
 import 'package:dro_health_phamarcy/screens/shared/components.dart';
 import 'package:dro_health_phamarcy/utils/colors.dart';
 import 'package:dro_health_phamarcy/utils/constants.dart';

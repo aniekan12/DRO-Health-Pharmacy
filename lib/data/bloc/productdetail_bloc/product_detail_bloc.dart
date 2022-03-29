@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:dro_health_phamarcy/business_logic/save_products.dart';
 import 'package:dro_health_phamarcy/data/models/suggestions.dart';
+import 'package:dro_health_phamarcy/data/repository/save_products.dart';
 import 'package:equatable/equatable.dart';
 part 'product_detail_event.dart';
 part 'product_detail_state.dart';

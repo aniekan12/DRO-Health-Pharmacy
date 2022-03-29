@@ -1,10 +1,10 @@
 import 'package:dro_health_phamarcy/data/bloc/product_counter_bloc/product_counter_bloc.dart';
 import 'package:dro_health_phamarcy/data/bloc/productdetail_bloc/product_detail_bloc.dart';
-import 'package:dro_health_phamarcy/screens/pharm_dashboard.dart';
+import 'package:dro_health_phamarcy/screens/dashboard/pharm_dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'business_logic/searchbloc/search_bloc.dart';
+import 'data/bloc/searchbloc/search_bloc.dart';
 import 'data/repository/search_repository.dart';
 
 void main() {

@@ -14,6 +14,7 @@ class SuggestionsData {
 }
 
 class Suggestions {
+  final int? pId;
   final String? id;
   final String? imagePath;
   final String? drugName;
@@ -23,6 +24,7 @@ class Suggestions {
   final String drugPrice;
 
   Suggestions({
+    required this.pId,
     required this.drugName,
     required this.description,
     required this.id,
@@ -35,6 +37,7 @@ class Suggestions {
 
 List<Suggestions> suggestions = [
   Suggestions(
+      pId: 1,
       id: 'PRO23648856',
       drugName: 'Paracetamol',
       imagePath: 'assets/images/drugs/paracetamol_two.png',
@@ -42,8 +45,9 @@ List<Suggestions> suggestions = [
       description:
           '1 pack of Emzor Paracetamol (500mg) contains 8 units of 12 tablets.',
       drugMeasurement: '500mg',
-      drugPrice: 'N350.00'),
+      drugPrice: '350.00'),
   Suggestions(
+      pId: 2,
       id: 'PRO23648856',
       drugName: 'Doliprane',
       imagePath: 'assets/images/drugs/doliprane.png',
@@ -51,8 +55,9 @@ List<Suggestions> suggestions = [
       description:
           '1 pack of Doliprane (1000mg) contains 8 units of 12 tablets.',
       drugMeasurement: '10000mg',
-      drugPrice: 'N350.00'),
+      drugPrice: '350.00'),
   Suggestions(
+      pId: 3,
       id: 'PRO23648856',
       drugName: 'Paracetamol',
       imagePath: 'assets/images/drugs/paracetamol_two.png',
@@ -60,8 +65,9 @@ List<Suggestions> suggestions = [
       description:
           '1 pack of Emzor Paracetamol (500mg) contains 8 units of 12 tablets.',
       drugMeasurement: '500mg',
-      drugPrice: 'N350.00'),
+      drugPrice: '350.00'),
   Suggestions(
+      pId: 4,
       id: 'PRO23648856',
       drugName: 'Ibuprofen',
       imagePath: 'assets/images/drugs/ibuprofen.png',
@@ -69,8 +75,9 @@ List<Suggestions> suggestions = [
       description:
           '1 pack of Emzor Ibuprofen (200mg) contains 8 units of 12 tablets.',
       drugMeasurement: '200mg',
-      drugPrice: 'N350.00'),
+      drugPrice: '350.00'),
   Suggestions(
+      pId: 5,
       drugName: 'Panadol',
       id: 'PRO23648856',
       description:
@@ -78,8 +85,9 @@ List<Suggestions> suggestions = [
       imagePath: 'assets/images/drugs/panadol.png',
       drugType: 'Tablet',
       drugMeasurement: '500mg',
-      drugPrice: 'N350.00'),
+      drugPrice: '350.00'),
   Suggestions(
+      pId: 6,
       id: 'PRO23648856',
       drugName: 'Ibuprofen',
       imagePath: 'assets/images/drugs/ibuprofen_two.png',
@@ -87,5 +95,5 @@ List<Suggestions> suggestions = [
       description:
           '1 pack of Emzor Paracetamol (400mg) contains 8 units of 12 tablets.',
       drugMeasurement: '400mg',
-      drugPrice: '₦350.00')
+      drugPrice: '350.00')
 ];

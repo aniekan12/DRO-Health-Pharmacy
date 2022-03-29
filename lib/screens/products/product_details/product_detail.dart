@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:dro_health_phamarcy/data/bloc/product_counter_bloc/product_counter_bloc.dart';
 import 'package:dro_health_phamarcy/data/bloc/productdetail_bloc/product_detail_bloc.dart';
 import 'package:dro_health_phamarcy/data/models/suggestions.dart';
+import 'package:dro_health_phamarcy/screens/cart/cart_page.dart';
 import 'package:dro_health_phamarcy/screens/shared/components.dart';
 import 'package:dro_health_phamarcy/utils/colors.dart';
 import 'package:dro_health_phamarcy/utils/navigation.dart';
@@ -59,21 +60,25 @@ class ProductDetail extends StatelessWidget {
                     bottom: 58,
                     right: 20,
                     child: BlocBuilder<ProductDetailBloc, ProductDetailState>(
-                      builder: (context, state) {
-                        if (state is AddProductToCartState) {
-                          ++count;
-                        } else {
-                          --count;
-                          if (count < 0) {
-                            count = 0;
-                          }
+                        builder: (context, state) {
+                      if (state is AddProductToCartState) {
+                        ++count;
+                      } else {
+                        --count;
+                        if (count < 0) {
+                          count = 0;
                         }
-                        return Badge(
-                            badgeContent: Text(
-                                _productDetailBloc.productsLength.toString()),
-                            child: SvgPicture.asset('assets/images/cart.svg'));
-                      },
-                    ),
+                      }
+                      return Badge(
+                          badgeContent: Text(
+                              _productDetailBloc.productsLength.toString()),
+                          child: InkWell(
+                              onTap: () {
+                                pushPage(context, CartPage());
+                              },
+                              child:
+                                  SvgPicture.asset('assets/images/cart.svg')));
+                    }),
                   ),
                 ],
               ),
@@ -168,7 +173,7 @@ class ProductDetail extends StatelessWidget {
                         child: Image.asset('assets/images/naira.png', width: 6),
                       ),
                       Text(
-                        suggestionss!.drugPrice.substring(1, 7),
+                        suggestionss!.drugPrice,
                         style: moneyText(),
                       ),
                     ],
